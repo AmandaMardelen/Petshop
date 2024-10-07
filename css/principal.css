@@ -1,0 +1,493 @@
+@font-face { 
+    font-family: RobotoRegular; 
+    src: local(Roboto-Regular), url(../fonte/Roboto-Regular.ttf); 
+} 
+ 
+@font-face { 
+    font-family: RobotoBlack; 
+    src: local(Roboto-Black), url(../fonte/Roboto-Black.ttf) 
+}  
+p { 
+    font-size: 1.1em; 
+    line-height: 1.3em; 
+    text-align: justify; 
+} 
+ 
+h1 { 
+    font-family: RobotoBlack; 
+    color: #C0262C; 
+    font-size: 2.5em; 
+}  
+h2 { 
+    font-family: RobotoBlack; 
+    font-size: 1.75em; 
+} 
+ 
+hr { 
+    border-color: #C0262C; 
+} 
+ 
+body { 
+    font-family: RobotoRegular; 
+    /*Estrutura*/ 
+    width: 1000px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+#curiosidades h2 { 
+    background-color: #C0262C; 
+    background-image: url(../imagens/importante-saber.jpg), url(../imagens/back-bolinha.gif); 
+    background-repeat: no-repeat, repeat; 
+    background-position: center right, center center; 
+    color: #FFFFFF; 
+    font-size: 2.5em; 
+    letter-spacing: 0.1em; 
+    width: 470px;      
+    padding: 61px 400px 61px 100px; 
+}
+#curiosidades figure { 
+    border: #f71c1c solid thin; 
+    border-radius: 35px 35px 0 0; 
+    padding: 20px 0 0; 
+    text-align: center; 
+    margin: 10px; 
+} 
+#curiosidades figcaption { 
+    background-color: #f02828; 
+    padding: 10px 10px; 
+    color: #FFFFFF; 
+    font-size: 1.5em;
+}
+#curiosidades ul li { 
+    list-style-type: none; 
+    list-style-image: url(../imagens/ossinho.png); 
+    list-style-position: inside; 
+    margin: 30px 0; 
+} 
+#curiosidades dt { 
+        color: #fff; 
+        background-color: #C0262C; 
+        padding: 10px; 
+} 
+#curiosidades dd { 
+        border: thin #C0262C solid; 
+        border-radius: 0 0 25px 25px; 
+        margin-top: -3px; 
+        margin-bottom: 30px; 
+        padding: 20px 20px 0; 
+        padding-top: 20px; 
+        padding-left: 20px; 
+        padding-bottom: 10px; 
+} 
+#curiosidades ol { 
+        list-style-type: none; 
+        white-space: pre; 
+        line-height: 0.9em; 
+        counter-reset: contador;  /* definir a variável de contagem */ 
+} 
+#curiosidades ol li::before { 
+        color: #da1515;  
+        counter-increment: contador;      
+        content: "Questão " counter(contador) " \00BB "; 
+} 
+     
+#curiosidades ul li a { 
+        text-decoration: none; 
+        color: #C0262C; 
+        font-weight: bold;  /*espessura da fonte*/ 
+        padding: 7px; 
+} 
+#curiosidades ul li a :hover { 
+        text-decoration: underline; 
+} 
+     
+    #curiosidades dd a[target =”_blank”] { 
+        text-decoration: none; 
+        color: #a77273; 
+        font-weight: bold; 
+        padding: 10px; 
+        display: inline-block; 
+    } 
+     
+    #curiosidades dd a[target=”_blank”]:hover { 
+        text-decoration: underline; 
+    } 
+  
+    @font-face { 
+        font-family: RobotoRegular; 
+        src: local(Roboto-Regular),  url(../fonte/Roboto-Regular.ttf); 
+    } 
+    @font-face {   
+        font-family: RobotoBlack; 
+        src: local(Roboto-Black), url(../fonte/Roboto-Black.ttf); 
+    } 
+    body { 
+        font-family: RobotoRegular; 
+    } 
+     
+    h1 { 
+        font-family: RobotoBlack; 
+        font-size: 2.5em; 
+        color: #C0262C; 
+    }
+    h2 { 
+        font-family: RobotoBlack; 
+        font-size: 1.75em; 
+    }
+    #produtos table { 
+        width: 600px; 
+        text-align: center; 
+        margin: 50px auto 30px; 
+        border-collapse: collapse; 
+        /*juntar as duas linhas das bordas do HTML padrão*/ 
+    } 
+    #produtos th, 
+    #produtos td { 
+        border: #999 solid 1px; 
+        padding: 5px; 
+        vertical-align: middle; 
+    } 
+    #produtos caption { 
+        background-color: #999; 
+        font-size: 1.5em; 
+        padding: 15px 0; 
+        color: #ffffff; 
+    } 
+     
+    #produtos td[colspan] { 
+        font-weight: bold; 
+        font-style: italic; 
+        color: #999; 
+    } 
+     #produtos tr:hover { 
+        background-color: #feff76; 
+    } 
+    #boletim h2 { 
+        font-size: 1.75em; 
+        /* 28/16=1.75 */ 
+        background: #C0262C url(../imagens/back-bolinha.gif) repeat top center; 
+        color: #fff; 
+        letter-spacing: 0.1em; 
+        padding: 10px; 
+        width: 316px; 
+    }
+    form { 
+        background-color: #999; 
+        margin: 30px 0; 
+        padding: 20px; 
+        border-radius: 0 15px; 
+    } 
+     
+    /* todos os botões enviar */ 
+    input[type="submit" ] { 
+        background-color: #C0262C; 
+        background: linear-gradient(to bottom, #6b1516 0%, #c0262c 30%, #c0262c 70%, #6b1516 100%); 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 1.2em; 
+        color: #fff; 
+        padding: 10px 30px; 
+        margin: 20px 0; 
+        text-shadow: 2px 2px 5px #000; 
+        /* posição da sombra x, y, esfumaçado, cor da sombra */ 
+        cursor: pointer; 
+    } 
+     
+    input#nome, 
+    input#email { 
+        background-color: transparent; 
+        border: none; 
+        border-bottom: #000 solid 1px; 
+        font-size: 1.2em; 
+        color: white; 
+        width: 800px; 
+    } 
+    ::-webkit-input-placeholder { 
+        color: #ddd; 
+        font-style: italic; 
+        font-size: 0.8em; 
+    } 
+     
+    /* Firefox */ 
+    ::-moz-placeholder { 
+        color: #ddd; 
+        font-style: italic; 
+        font-size: 0.8em; 
+    } 
+     
+    /* IE */ 
+    :-ms-input-placeholder { 
+        color: #ddd; 
+        font-style: italic; 
+        font-size: 0.8em; 
+    } 
+     
+    #boletim label { 
+        display: block; 
+        margin-top: 10px; 
+        float: left; 
+        width: 60px; 
+    } 
+     
+    /* página banho e tosa - formulário */ 
+    #banhoetosa fieldset { 
+        background-color: #fff; 
+        border: none; 
+        border-radius: 0 15px; 
+        margin-bottom: 20px; 
+    }
+    #banhoetosa fieldset legend { 
+        background-color: #C0262C; 
+        color: #fff; 
+        font-weight: bold; 
+        letter-spacing: .05em; 
+        padding: 10px; 
+        margin-left: -13px; 
+    } 
+     
+    #banhoetosa fieldset label { 
+        display: block; 
+        margin-top: 10px; 
+        float: left; 
+        width: 115px; 
+    } 
+     
+    #banhoetosa input[type="text"], 
+    #banhoetosa input[type="email"] { 
+        background-color: transparent; 
+        border: none; 
+        border-bottom: #000 solid 1px; 
+        font-size: 1.2em; 
+        color: #000; 
+        width: 770px; 
+    } 
+     
+    #banhoetosa fieldset textarea { 
+        width: 770px; 
+        height: 100px; 
+        font-size: 1.2em; 
+        border: #000 solid 1px; 
+         resize: none; 
+    }  
+    #banhoetosa fieldset label.labelsimples { 
+        display: inline; 
+        float: none; 
+    } 
+    #banhoetosa p { 
+        text-align: left; 
+    }  
+    #banhoetosa p:first-line { 
+        font-size: inherit; 
+        font-variant: inherit; 
+        font-weight: inherit; 
+        font-style: inherit; 
+    }  
+    #banhoetosa main h2 { 
+        background: #FEF84F url(../imagens/postit.jpg) no-repeat top left; 
+        color: #000; 
+        padding: 35px; 
+        /* padding: 35 para cada um dos 4 lados tamanho do postit: 277x185px */ 
+        width: 207px; 
+        /* 35+35=70 > 277-70=207 */ 
+        height: 115px; 
+        /* 35+35=70 > 185-70=115 */ 
+        font-size: 1.3125em; 
+        /* 21/16=1.3125em */ 
+        letter-spacing: 0.07em; 
+    } 
+    header h1 { 
+        width: 240px; 
+        float: left; 
+        background-image: url(../imagens/meu-amigo-cao-petshop-header.png); 
+        background-repeat: no-repeat; 
+        background-position: center center; 
+        height: 200px; 
+        text-indent: -1000px; 
+        margin-bottom: 0px; 
+    } 
+     
+    header #anuncio { 
+        width: 510px; 
+        float: left; 
+        margin: 80px auto auto; 
+        padding-top: 0px; 
+    } 
+     
+    header section { 
+        padding-top: 70px; 
+    } 
+     
+    header section a[href="boletim.html"] { 
+        border: solid #C0262C thin; 
+        padding: 15px; 
+        border-radius: 15px; 
+        color: #C0262C; 
+        text-decoration: none; 
+        font-size: 1.1em; 
+    }
+    header section p { 
+        color: #999999; 
+        margin: 33px auto 7px; 
+    } 
+     
+    header section figure { 
+        width: 100%; 
+        margin: 0px; 
+    } 
+     
+    header section figure a { 
+        padding: 25px 5px 0; 
+        border: none; 
+    } 
+     
+    header section figure a:first-child { 
+        padding: 25px 5px 0 0; 
+    } 
+     
+    header section figure a:last-child { 
+        padding: 25px 0 0 5px; 
+    } 
+    /* estrutura de navegação */ 
+    nav { 
+        background-color: #000; 
+        overflow: auto; 
+        clear: both; 
+        margin-top: 10px; 
+    } 
+    nav ul { 
+        list-style: none; 
+        padding-left: 0px; 
+        margin-top: 1px; 
+    }
+    nav ul li { 
+        float: left; 
+    } 
+     
+    nav ul a { 
+        color: #fff; 
+        text-decoration: none; 
+        font-size: 1.2em; 
+        padding: 8px 50px; 
+        line-height: 2em; 
+    } 
+     
+    #inicial a[href="index.html"], 
+    #quemsomos a[href="quemsomos.html"], 
+    #produtos a[href="produtos.html"], 
+    #banhoetosa a[href="banhoetosa.html"], 
+    #curiosidades a[href="curiosidades.html"] {
+    background-color: #000; 
+    } 
+    #inicial aside { 
+        width: 230px; 
+        float: left; 
+        margin-top: 100px; 
+    } 
+  
+     
+    #inicial main { 
+        width: 490px; 
+        float: left; 
+        margin: 35px 25px 10px; 
+
+    }
+    footer { 
+        clear: both; 
+        border-top: 7px solid #999; 
+        background-color: #000; 
+        color: #fff; 
+        text-align: center; 
+        padding: 10px; 
+        position:relative; /*A tela gira e o rodapé fica embaixo*/ 
+        bottom:0; 
+        width: inherit; /*ele herda a largura do body*/ 
+    } 
+     
+    footer p { 
+        margin: 0px; 
+    } 
+    #quemsomos main img { 
+        float: left; 
+        margin: 0 20px 20px 0; 
+        padding: 10px; 
+        border: solid #C0262C thin; 
+        background-color: #fff; 
+    } 
+     
+    /* página obrigado p.318*/ 
+    #obrigado main p img { 
+        float: left; 
+        margin: 0 20px 20px 0; 
+        padding: 10px; 
+        border: solid #C0262C thin; 
+        background-color: #fff; 
+    }
+    #destaqueobrigado { 
+        position: relative; 
+        border: solid #C0262C 1px; 
+        border-radius: 0 25px; 
+        padding: 5px 25px; 
+        margin: 20px 0; 
+    } 
+     
+    #obrigado #lacinho { 
+        position: absolute; 
+        top: -20px; 
+        right: -20px; 
+        transform: rotate(30deg); 
+    } 
+     
+    /* transição em caixas - 3 caixas de 163 x 230 */ 
+    .anuncioanime { 
+        margin: 0 0 10px; 
+        padding: 0; 
+        overflow: auto;
+    } 
+     
+    .anuncioanime .boxanuncio, 
+    .anuncioanime .boxbrincadeiras { 
+        width: 162px; 
+        height: 230px; 
+        border-bottom: solid thin #C0262C; 
+        float: left; 
+        position: relative; 
+        overflow: hidden; 
+    }
+    
+    .anuncioanime .boxanuncio p,
+    .anuncioanime .boxbrincadeiras p { 
+        text-align: center; 
+        font-size: 0.9em; 
+        line-height: 1.4em; 
+        background-color: rgba(255, 255, 255, 1); 
+        border-left: solid thin #C0262C; 
+        border-right: solid thin #C0262C; 
+        margin: 0; 
+        padding: 7px 14px; 
+        position: absolute; 
+        bottom: -70px; 
+        left: 0; 
+        transition: 1s linear 0.1s; 
+        cursor: default; 
+    } 
+
+     
+    .anuncioanime .boxanuncio p:first-line,
+    .anuncioanime .boxbrincadeiras p:first-line { 
+        font-size: 1.1em; 
+        font-variant: inherit; 
+        font-style: normal; 
+        font-weight: bolder; 
+        color: #C0262C; 
+        padding: 0; 
+        bottom: -70;
+    } 
+    .anuncioanime .boxanuncio p:hover { 
+        background-color: rgba(255, 255, 255, 0.7); 
+        bottom: 0; 
+    } 
+    aside audio {width: 230px;} 
+    aside video {width: 230px;}
+    #curiosidades ul li a:hover{ 
+        text-decoration: underline; 
+    }  
